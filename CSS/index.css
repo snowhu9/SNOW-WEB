@@ -1,0 +1,799 @@
+/* Start Main CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+:root {
+    --primary: rgba(0, 0, 0, 1);
+    --secondary: rgba(0, 0, 0, 0.6);
+    --time: .6s;
+}
+/* End Main CSS */
+
+/* Start Nav CSS */
+nav {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+
+nav span {
+    background-color: #fff;
+    width: 25px;
+    height: 5px;
+    content: "";
+    position: absolute;
+    border-radius: 2px;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.span-active {
+    width: 30px;
+}
+
+nav span::after, nav span::before {
+    background-color: #fff;
+    width: 25px;
+    height: 5px;
+    content: "";
+    position: absolute;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+nav span::before {
+    top: -7px;
+}
+
+nav span::after {
+    top: 7px;
+}
+
+nav .item {
+    display: none;
+}
+
+nav .item.active{
+    display: block;
+}
+
+nav .btn {
+    display: block;
+}
+
+nav h1 {
+    padding: 15px 25px;
+}
+
+nav ul li{
+    padding: 15px 30px;
+    font-weight: 600;
+    border-bottom: 2px solid #333;
+}
+
+nav a {
+    color: white;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: rgb(6, 228, 228);
+    transition: .7s ease-in-out;
+}
+/* End Nav CSS */
+
+/* Start Welcome CSS */
+.welcome {
+    margin-top: 58px;
+    width: 100%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary)),
+    url(../IMG/welcome.JPG);
+    height: 565px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    color: white;
+}
+
+.slide h1 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    color: #40D4D4;
+    cursor: pointer;
+}
+
+.slide p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: #ffffff;
+}
+
+.slide a {
+    font-size: 1.5rem;
+    border: 2px solid rgb(120, 120, 120);
+    padding: 5px 15px;
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    width: 230px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin: 15px auto;
+    text-transform: uppercase;
+    transition: .5s ease-in-out;
+}
+
+.slide a:hover {
+    border: 2px solid black;
+    color: #40D4D4;
+    letter-spacing: .5px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.social ul li {
+    border: 1px solid #fff;
+    margin: 20px 10px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+}
+.social ul li:hover {
+    border-color: #000;
+    transition: .4s ease-in-out;
+}
+
+.social ul li a {
+    position: relative;
+    left: -17px;
+}
+
+.social ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* End Welcome CSS */
+
+/* Start Service CSS */
+.continer .title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 0px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #40D4D4;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.black-span {
+    color: #000;
+}
+
+.white-span {
+    color: white;
+}
+
+.continer .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    border: 3px solid black;
+    padding: 10px 15px;
+    width: 250px;
+    border-radius: 35px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 5px 20px -10px #333;
+    cursor: pointer;
+}
+
+.continer .card:last-child {
+    margin-bottom: 10px;
+}
+
+.continer img {
+    width: 75px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.continer .card-title {
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #40D4D4;
+    margin-bottom: 10px;
+}
+
+.continer p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.service .continer a {
+    display: inline-block;
+    padding: 2px;
+    background-color: rgb(2, 252, 2);
+    width: 250px;
+    border-radius: 37px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+}
+
+.continer a:hover {
+    border-color: black;
+    transition: .5s ease-in-out;
+}
+
+.card:hover {
+    transition: .3s ease-in-out;
+    box-shadow: 10px 5px 20px 1px #333;
+}
+/* End Service CSS */
+
+/* Start Blog CSS */
+
+.blog .continer {
+    background-color: black;
+    color: white;
+}
+
+.blog .continer .title {
+    padding: 15px 0px;
+}
+
+.blog .continer article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border-right: 1px solid white; */
+}
+
+.blog .continer article .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.blog .continer article .header img {
+    width: 50px;
+    padding: 10px 15px;
+}
+
+.blog .continer article .header .header-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog .continer article .header .header-sub h1 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.blog .continer article .header .header-sub h1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.blog .continer article .header .header-sub p {
+    font-size: .8rem;
+    font-weight: 500;
+    color: rgb(120, 120, 120);
+}
+
+.blog .continer article p {
+    padding: 10px 15px;
+    line-height: 1.4;
+}
+
+.blog .continer article hr {
+    width: 80%;
+    margin: auto;
+}
+/* Start Blog CSS */
+
+/* Start About CSS */
+.about .continer .title {
+    padding: 15px 0px;
+}
+
+.continer .named img {
+    width: 80%;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+.continer .named h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    color: #40D4D4;
+}
+
+.about .continer p {
+    margin-bottom: 0px;
+    line-height: 1.5;
+    padding: 10px 15px;
+}
+/* Start About CSS */
+
+/* Start Footer CSS */
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .continer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .continer .web-desing, footer .continer .social-list, footer .continer .subscripe {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+footer .continer .web-desing li, footer .continer .social-list li {
+    padding: 3px 0px;
+    width: 100%;
+    color: #333;
+}
+
+footer .continer .web-desing li a:hover, footer .continer .social-list li a:hover {
+    text-decoration: underline;
+    color: rgb(120, 120,120);
+    transition: .5s ease-in-out;
+}
+
+footer .copy p {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .copy p span {
+    color: #40D4D4;
+}
+
+footer a {
+    color: rgb(160, 160, 160);
+}
+
+footer .continer .subscripe .list-title {
+    color: #40D4D4;
+    margin: 15px 0px;
+}
+
+footer .continer .subscripe .email {
+    width: 250px;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    transition: .7s ease-in-out;
+}
+
+footer .continer .subscripe .go {
+    width: 100px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(120, 120, 120);
+    font-size: 1.2rem;
+}
+
+footer .continer .subscripe .go:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+/* End Footer CSS */
+
+/* Start Media CSS */
+
+/* At 468px */
+
+@media (min-width: 468px) {
+    /* Start Nav CSS */
+    nav h1 {
+        font-size: 1.2rem;
+    }
+    nav .item {
+        display: inline-block;
+    }
+
+    nav .btn {
+        display: none;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 2px;
+        right: 10px;
+    }
+
+    nav ul li {
+        border: 0;
+        font-size: .9rem;
+        padding: 15px 10px;
+    }
+    /* End Nav CSS */
+
+    /* Start Welcome CSS */
+    .welcome {
+        margin-top: 52px;
+        width: 100%;
+        background: linear-gradient(135deg, var(--primary), var(--secondary)),
+        url(../IMG/welcome.JPG);
+        height: 565px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+    }
+    /* End Welcome CSS */
+
+    /* Start Service CSS */
+    .continer .card {
+        width: 280px;
+    }
+
+    /* End Service CSS */
+
+    /* Start Blog CSS */
+    
+    .blog .continer .title {
+        padding: 15px 0px;
+    }
+
+    /* End Blog CSS */
+
+    /* Start Footer CSS */
+
+    footer .continer .web-desing, footer .continer .social-list, footer .continer .subscripe {
+        width: 410px;
+    }
+
+    footer .continer .web-desing li, footer .continer .social-list li {
+        padding: 6px 0px;
+    }
+    footer .continer .subscripe .email {
+        width: 300px;
+    }
+
+    /* End Footer CSS */
+
+
+}
+
+/* At 468px */
+
+/* At 630px */
+
+@media(min-width: 630px){
+    /* Start Nav CSS */
+    nav h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        font-size: 1.1rem;
+        padding: 17px 10px;
+    }
+    /* End Nav CSS */
+
+    /* Start Welcome CSS */
+
+    .slide a {
+        width: 320px;
+    }
+
+    /* End Welcome CSS */
+
+    /* Start Service CSS */
+
+    .continer .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .continer .card {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px 15px;
+        padding: 10px 15px;
+        width: 220px;
+    }
+
+    .service .continer a {
+        width: 220px;
+    }
+
+    /* End Service CSS */
+
+    /* Start About CSS */
+
+    .about .continer .about-center {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .continer .named {
+        flex-direction: row;
+        width: 30%;
+    }
+
+    .about .continer p {
+        width: 300px;
+        line-height: 1.6rem;
+    }
+
+    /* Start About CSS */
+
+    /* Start Footer CSS */
+
+    footer .continer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .lists {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer .lists .web-desing, footer .lists .social-list, footer .lists .subscripe {
+        width: 150px;
+        height: fit-content;
+        font-size: 0.9rem;
+    }
+
+    footer .lists .web-desing .list-title, footer .lists .social-list .list-title, footer .lists .subscripe .list-title {
+        font-size: 1.2rem;
+    }
+
+    footer .lists .subscripe {
+        margin: 0px 5px;
+    }
+
+    footer .lists .subscripe .email {
+        width: 200px;
+    }
+
+    /* End Footer CSS */
+
+}
+
+/* At 630px */
+
+/* At 1200px */
+
+@media (min-width: 1200px) {
+    /* Start Nav CSS */
+    nav h1 {
+        font-size: 1.7rem;
+    }
+
+    nav ul li {
+        font-size: 1.3rem;
+    }
+    /* End Nav CSS */
+
+    /* Start Welcome CSS */
+    .slide h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .slide p {
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .slide a {
+        font-size: 1.5rem;
+        padding: 5px 10px;
+        border-radius: 50px;
+        width: 420px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        margin: 15px auto;
+    }
+
+    .slide a:hover {
+        letter-spacing: 1px;
+    }
+
+    .slide a:active {
+        letter-spacing: 1.5px;
+    }
+
+    .social ul li a {
+        position: relative;
+        left: -12px;
+    }
+    /* End Welcome CSS */
+
+    /* Start service CSS */
+
+    .continer .card {
+        width: 250px;
+    }
+
+    .service .continer a {
+        display: inline-block;
+        padding: 2px;
+        background-color: rgb(2, 252, 2);
+        width: 250px;
+        border-radius: 37px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+    }
+
+    /* End service CSS */
+
+    /* Start Blog CSS */
+
+    .blog .continer .article-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .blog .continer article {
+        border-right: 1px solid white;
+        width: 390px;
+    }
+
+    .blog .continer article .header .header-sub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* End Blog CSS */
+
+    /* Start About CSS */
+
+    .about .continer .about-center {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .continer .named {
+        flex-direction: row;
+        width: 20%;
+    }
+    
+    .about .continer p {
+        width: 600px;
+        line-height: 3;
+    }
+    /* Start About CSS */
+
+        /* Start Footer CSS */
+
+        footer .continer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        footer .lists {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+        footer .lists .web-desing, footer .lists .social-list, footer .lists .subscripe {
+            width: 300px;
+            height: fit-content;
+            font-size: .9rem;
+        }
+    
+        footer .lists .web-desing .list-title, footer .lists .social-list .list-title, footer .lists .subscripe .list-title {
+            font-size: 1.6rem;
+        }
+    
+        footer .lists .subscripe {
+            margin: -1px 5px;
+        }
+    
+        footer .lists .subscripe .email {
+            width: 300px;
+        }
+    
+        /* End Footer CSS */
+
+}
+
+/* At 1200px */
+
+/* End Media CSS */
